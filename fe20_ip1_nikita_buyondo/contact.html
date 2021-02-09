@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="NixMix is THE site where you can find the best music for every party. Choose from your favorite playlist and listen to all the best songs from your own personal DJ.">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>NixMix - Your own personal DJ - Contact</title>
+</head>
+
+<body>
+    <header>
+        <h1>Hello Friends</h1>
+    </header>
+    <section class="banner">
+        <img src="img/music-player.jpg" alt="hello friend banner">
+        <div class=welcome>
+            <h2>Welcome to<br><span>NixMix</span></h2>
+        </div>
+    </section>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html" id="current">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h3>Contact me</h3>
+    </main>
+    <form id="myForm" name="myForm" onsubmit="return validation()">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your Name">
+        <br><br>
+        <input type="radio" name="gender" value="male">Male
+        <br>
+        <input type="radio" name="gender" value="female">Female
+        <br>
+        <input type="radio" name="gender2" value="other">Other
+        <br><br>
+        <label for="email">Your email:</label><br>
+        <input type="email" id="email" name="email" placeholder="your.email@exemple.com">
+        <br><br>
+        <textarea name="writeMe" id="writeMe" cols="30" rows="10" placeholder="Write me a message..."></textarea>
+        <br><br>
+        <button class="submit" type="submit">Send</button>
+        <br>
+        <div id="message" style="color: red"></div>
+    </form>
+    <br>
+    <footer>
+        <p class="copyright">Copyright 2020 NixMix</p>
+    </footer>
+</body>
+
+</html>

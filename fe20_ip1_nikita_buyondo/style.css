@@ -1,0 +1,203 @@
+body, ul, li, h1, h2, h3, a, div, footer {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+header {
+    background-color: white;
+    color:  #03b3b1;
+    padding: 25px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.banner {
+    position: relative;
+    top: 50px;
+}
+.banner img {
+    max-width: 100%;
+}
+.banner .welcome {
+    text-align: center;
+    background-color: #09d0d5;
+    color: white;
+    position: absolute;
+    left: 45%;
+    top: 50%;
+}
+.banner h2 {
+    font-size: 45px;
+}
+nav {
+    background-color: #03b3b1;
+    padding: 20px;
+    position: sticky;
+    top: 80px;
+}
+nav ul {
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li {
+    text-align: center;
+    width: 33%;
+    display: inline-block;
+    font-size: 20px;
+}
+nav li a {
+    text-decoration: none;
+    color: white;
+}
+main{
+max-width: 100%;
+width: 1200px;
+margin: 80px auto;
+padding: 0 40px;
+box-sizing: border-box;
+}
+h3 {
+    color: teal;
+    font-size: 30px;
+}
+article p{
+    line-height: 2em;
+}
+.images {
+    text-align: center;
+    
+}
+.images li {
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+}
+.images li img {
+    max-width: 100%;
+}
+footer {
+    text-align: center;
+    background-color: teal;
+    color: #a09e9e;
+    padding: 20px 20px;
+}
+form {
+    text-align: center;
+    line-height: 2em;
+}
+form input {
+    text-align: center;
+    margin: 15px 15px;
+    padding: 10px 30px;
+    border-radius: 15px;
+    border: 2px solid teal;
+}
+form textarea {
+    margin: 15px 15px;
+    padding: 10px 40px;
+    border-radius: 15px;
+    border: 2px solid teal;
+    resize: none;
+}
+button.submit {
+    margin: 15px 15px;
+    padding: 10px 40px;
+    border-radius: 15px;
+    border: 2px solid #03b3b1;
+}
+div {
+    margin-bottom: 20px;
+    padding: 0px;
+    background-color: tomato;
+    text-align: center;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+
+
+/* pseudo classes */
+
+/* Remove outline for non-keyboard :focus */
+/* *:focus:not(.focus-visible) {
+  outline: none; */
+
+
+/* Optional: Customize .focus-visible */
+/* .focus-visible {
+  outline-color: black; */
+
+
+nav li a:hover {
+    background-color:  #09d0d5;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+form input:focus, form textarea:focus { 
+    border:3px solid #03b3b1; 
+}
+button:hover {
+    background-color: #03b3b1;
+
+}
+button.submit:hover {
+    color: white;
+    background-color: #03b3b1;
+    margin: 15px 15px;
+    padding: 10px 40px;
+    border-radius: 15px;
+    opacity: 1;
+    cursor: pointer;
+}
+button:active {
+    background-color: #03b3b1;
+    box-shadow: 5px 5px rgb(138, 135, 135);
+    transform: translateY(2px);
+  }
+/* form input:focus:invalid, form textarea:focus:invalid {
+    border-color: #d30f0fc9;
+}
+
+form input:required:valid, form textarea:required:valid {
+    border-color: #08d408;
+} */
+
+@media (max-width: 1500px){
+    .banner .welcome{
+      top: 50% ;
+      left: 43%;
+    }
+  }
+
+@media (max-width: 1200px){
+    .banner .welcome{
+      top: 50% ;
+      left: 38%;
+    }
+  }
+
+@media (max-width: 870px){
+    .banner .welcome{
+      top: 50% ;
+      left: 38%;
+    }
+    .banner h2 {
+        font-size: 38px;
+  }
+
+
+@media (max-width: 550px){
+    .banner .welcome{
+      top: 50% ;
+      left: 37%;
+    }
+    .banner h2 {
+        font-size: 25px;
+    }
+}
+}
